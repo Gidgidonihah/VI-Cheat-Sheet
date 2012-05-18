@@ -1,0 +1,423 @@
+.js .jshidden,
+.no-js .nojshidden{
+	display: none;
+}
+body{
+	background: #333 url(../images/noise.png);
+	color: #ddd;
+	margin: auto;
+	width: 1050px;
+	font: 1em/1.5em sans-serif;
+}
+h1{
+	text-align: center;
+	font-weight: normal;
+}
+.button{
+	clear: both;
+	overflow: hidden;
+}
+.button > div{
+	line-height: 1.5em;
+	padding-left: 7em;
+	padding: 1.625em 7em;
+}
+.button > .action{
+	padding-bottom: 0;
+}
+.button > .shift_action{
+	padding-top: 0;
+}
+.button > .action:before{
+	content: 'Default: ';
+}
+.button > .shift_action:before{
+	content: 'Shift: ';
+}
+.button > .glyph{
+	font-size: 2.5em;
+	line-height: 2.5em;
+	float: left;
+	width: 2.5em;
+	text-align: center;
+	padding: 0;
+}
+
+#note1:before{content:'* ';}
+.button > .note1:after{ content: ' *'; }
+
+#note2:before{content:'† ';}
+.button > .note2:after{ content: ' †'; }
+.button > .note1.note2:after{ content: ' *†'; }
+
+#note3:before{content:'‡ ';}
+.button > .note3:after{ content: ' ‡'; }
+
+#note4:before{content:'⁂ ';}
+.button > .note4:after{ content: ' ⁂'; }
+
+.js{
+	#keyboard{
+		background: url(../images/keyboard-off.png) no-repeat;
+		width: 1024px;
+		height: 481px;
+		overflow: hidden;
+		position: relative;
+	}
+	#notes > p{
+		display: none;
+	}
+	#instruction{
+		background: none;
+		height: 10em;
+		width: 80%;
+		margin: auto;
+	}
+	#keyboard > .button{
+		border: 0; font: 0/0 a; text-shadow: none; color: transparent;
+		width: 65px;
+		height: 60px;
+		position: absolute;
+	}
+	.button:hover{
+		background: url(../images/keyboard-on.png) no-repeat top left;
+	}
+	#esc{
+		@y: 75px;
+		@x: 21px;
+		top: @y;
+		left: @x;
+		height: 40px;
+		width: 65px;
+		background-position: -@x -@y;
+	}
+	#tilde{
+		@x:20px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#one{
+		@x:87px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#two{
+		@x:154px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#three{
+		@x:222px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#four{
+		@x:291px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#five{
+		@x:358px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#six{
+		@x:427px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#seven{
+		@x:495px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#eight{
+		@x:563px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#nine{
+		@x:631px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#zero{
+		@x:699px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#minus{
+		@x:767px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#equals{
+		@x:835px;
+		@y:121px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#q{
+		@x:124px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#w{
+		@x:192px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#e{
+		@x:260px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#r{
+		@x:328px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#t{
+		@x:396px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#y{
+		@x:464px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#u{
+		@x:532px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#i{
+		@x:600px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#o{
+		@x:668px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#p{
+		@x:736px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#bracket_open{
+		@x:804px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#bracket_close{
+		@x:872px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#backslash{
+		@x:940px;
+		@y:189px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#a{
+		@x:140px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#s{
+		@x:207px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#d{
+		@x:276px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#f{
+		@x:344px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#g{
+		@x:412px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#h{
+		@x:480px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#j{
+		@x:548px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#k{
+		@x:616px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#l{
+		@x:684px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#semicolon{
+		@x:752px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#quote{
+		@x:820px;
+		@y:254px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#z{
+		@x:173px;
+		@y:321px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#x{
+		@x:241px;
+		@y:321px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#c{
+		@x:308px;
+		@y:321px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#v{
+		@x:376px;
+		@y:321px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#b{
+		@x:444px;
+		@y:321px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#n{
+		@x:512px;
+		@y:321px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#m{
+		@x:580px;
+		@y:321px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#comma{
+		@x:648px;
+		@y:321px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#period{
+		@x:716px;
+		@y:321px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+	#forward_slash{
+		@x:784px;
+		@y:321px;
+		left: @x;
+		top: @y;
+		background-position: -@x -@y;
+	}
+}
